@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Cloth Try-On</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>AI Cloth Try-On 👗👕</h2>
+        <p>Upload your photo & choose any dress to preview how it looks!</p>
+
+        <div class="upload-box">
+            <input type="file" id="userPhoto" accept="image/*">
+        </div>
+
+        <h3>Select Cloth Photo:</h3>
+        <div class="upload-box">
+            <input type="file" id="clothPhoto" accept="image/*">
+        </div>
+
+        <button onclick="generateTryOn()">Generate Try-On</button>
+
+        <div id="result">
+            <h3>Output:</h3>
+            <img id="outputImage" src="" />
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
